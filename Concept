@@ -1,0 +1,37 @@
+Concept-
+
+MongoDB is a relational database used in Big Data Applications. File is stored in JSON format.
+MongoDB provides faster updates and results. It is quick in query processing and provides high 
+scaling applications. It uses Collection, document and indexing. It uses Sharding which is 
+basically division of a single database into multiple servers which result in faster processing.
+
+Collection-
+It is a catalogue of documents. These documents may be related or unrelated within
+the database. Each MongoDB server contains multiple databases which contains Collection.
+Syntax-db. createCollection (nameofcollection, memory size/indexing)
+
+Document-
+It is a combination of key->Value Pair.Fields in document may or may not be related 
+to each other.
+Syntax-db.nameofcollection.insert(document)
+
+Indexing-
+Using indexing the search results are optimized, the document is scanned at a faster 
+pace and document is retrieved.
+Syntax- db. nameofcollection. createIndex({key:1})
+
+LIKE –
+1.Useful for bigdata applications.
+2.limit function can be used to limit the retrieved number of documents.
+3.Timestamp function will store creation time of the documents, and if ObjectID function is 
+used it will automatically save the timestamp while creating a unique ID.
+4.Aggregation functions are used in MongoDB such as sum, avg , min , max , push , first , last.
+
+DISLIKE-
+1.Documents in MongoDB are very difficult to update and sometimes may result in data loss or 
+corrupt data.
+2.Does not support relational database as it uses Multi document Atomicity, Consistency , 
+Isolation, Durability.
+3.One main issue of MongoDB is data duplication as data handling becomes tedious job.
+4.Memory usage in MongoDB is very High and requires a lot of space. Example -Data 
+Duplication.
